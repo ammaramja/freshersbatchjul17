@@ -1,0 +1,15 @@
+.border1{
+	border-width: 0.5em;
+	border-color: black;	
+	border-style: solid;
+}
+.border2{
+	border-width: 0.25em;
+	border-color: black;	
+	border-style: solid;
+}
+.border3{
+	border-width: 0.125em;
+	border-color: black;	
+	border-style: solid;
+}
