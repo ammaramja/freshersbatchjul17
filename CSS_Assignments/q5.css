@@ -1,3 +1,8 @@
-td{
-border:solid 2px;
+.border{
+	border-collapse: collapse;
+	border-color: black;
+}
+
+.b{
+	font-weight: 800;
 }
