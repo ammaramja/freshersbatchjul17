@@ -19,7 +19,7 @@ rs_1_conf = {
            members: [
                       {
                        _id: 0,
-                       host: "Minal-RD:27001"
+                       host: "AMMAR_AJ:27001"
                       }
                     ]
          }
@@ -27,7 +27,7 @@ rs_1_conf = {
 rs.initiate(rs_1_conf)
 rs.conf()
 
-rs.add("Minal-RD:27002")
+rs.add("AMMAR_AJ:27002")
 
 
 
@@ -40,7 +40,7 @@ rs_2_conf = {
            members: [
                       {
                        _id: 0,
-                       host: "Minal-RD:27003"
+                       host: "AMMAR_AJ:27003"
                       }
                     ]
          }
@@ -48,7 +48,7 @@ rs_2_conf = {
 rs.initiate(rs_2_conf)
 rs.conf()
 
-rs.add("Minal-RD:27004")
+rs.add("AMMAR_AJ:27004")
 
 
 
@@ -67,7 +67,7 @@ rs_config_1_conf = {
            members: [
                       {
                        _id: 0,
-                       host: "Minal-RD:27031"
+                       host: "AMMAR_AJ:27031"
                       }
                     ]
          }
@@ -75,12 +75,12 @@ rs_config_1_conf = {
 rs.initiate(rs_config_1_conf)
 rs.conf()
 
-rs.add("Minal-RD:27012")
+rs.add("AMMAR_AJ:27012")
 
 
 
-start mongos --configdb RS_CONFIG/Minal-RD:27031,Onkar-Des:27012 --logappend --logpath c:\data\cfg1\mongos_1.log --port 27017
-start mongos --configdb RS_CONFIG/Minal-RD:27031,Onkar-Des:27012 --logappend --logpath c:\data\cfg2mongos_2.log --port 27018
+start mongos --configdb RS_CONFIG/AMMAR_AJ:27031,AMMAR_AJ:27012 --logappend --logpath c:\data\cfg1\mongos_1.log --port 27017
+start mongos --configdb RS_CONFIG/AMMAR_AJ:27031,AMMAR_AJ:27012 --logappend --logpath c:\data\cfg2mongos_2.log --port 27018
 
 
 
@@ -90,8 +90,8 @@ start mongo --port 27017
 
 
 mongos>sh.help()
-mongos>sh.addShard("RS_1/Minal-RD:27001")  //any one node is fine.
-mongos>sh.addShard("RS_2/Minal-RD:27003")  //any one node is fine.
+mongos>sh.addShard("RS_1/AMMAR_AJ:27001")  //any one node is fine.
+mongos>sh.addShard("RS_2/AMMAR_AJ:27003")  //any one node is fine.
 mongos>sh.status()
 
 mongos>use config

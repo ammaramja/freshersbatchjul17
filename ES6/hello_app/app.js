@@ -7,6 +7,9 @@ import {arrow} from "./components/arrow.js";
 import {extended} from "./components/extended.js";
 import {temp_literal} from "./components/temp_literal.js";
 import {destruct} from "./components/destruct.js";
+import {classes_and_modules} from "./components/classes_and_modules.js";
+import {symbols} from "./components/symbols.js";
+import {arm} from "./components/arm.js";
 
 //constants();
 
@@ -20,4 +23,10 @@ import {destruct} from "./components/destruct.js";
 
 //temp_literal();
 
-destruct();
+//destruct();
+
+//classes_and_modules();
+
+symbols();
+
+//arm();
