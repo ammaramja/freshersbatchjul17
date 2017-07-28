@@ -1,0 +1,23 @@
+
+        <input type="text" name="search" placeholder="Search..">
+        <table class="table">
+        <tr>
+            <td>Name</td>
+            <td>Description</td>
+            <td>Category</td>
+            <td>Actions</td>
+        </tr>
+        <tr *ngFor="let ad of add_array_child">
+            <td>{{ad.name}}</td>
+            <td>{{ad.desc}}</td>
+            <td>{{ad.cat}}</td>
+            <td>
+
+                <input type="button" value="Edit!" class="btn btn-primary">
+                <input type="button" value="Delete!" class="btn btn-primary" (click)="deleteAd(ad.name)">
+
+
+            </td>
+        </tr>
+        
+        </table>
