@@ -14,7 +14,7 @@
             <td>{{ad.cat}}</td>
             <td>
 
-                <input type="button" value="Edit!" class="btn btn-primary">
+                <input type="button" value="Edit!" class="btn btn-primary" (click)="editAd(ad.name)">
                 <input type="button" value="Delete!" class="btn btn-primary" (click)="deleteAd(ad.name)">
 
 

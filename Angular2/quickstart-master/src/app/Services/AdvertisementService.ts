@@ -17,15 +17,21 @@ getAllAds() {
     return this.Ads;
 }
 
-getAd(by_name:any)
+getAd(by_name:any):Object
 {
+    let ad_d:Object;
 
     this.Ads.forEach((ad)=>{
         if(ad.name === by_name)
         {
+            console.log("ad_arrayyyyyy",ad);
+            ad_d = ad;
             return ad;
         }
     })
+
+    
+    return ad_d;
 }
 
 setAd(newAd:any)
@@ -47,9 +53,12 @@ deleteAd(by_name:any)
 
     this.Ads.splice(index,1);
 
-    console.log(this.getAllAds());
+    console.log(this.getAllAds());   
+}
 
-    
+editAdvertise(new_name:any,new_cat:any,new_desc:any)
+{
+
 }
 
 }

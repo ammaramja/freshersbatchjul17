@@ -1,5 +1,6 @@
 import { Component,EventEmitter } from '@angular/core';
 import {AdService} from '../../Services/AdvertisementService';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'table-comp',
@@ -8,12 +9,17 @@ import {AdService} from '../../Services/AdvertisementService';
   outputs:['update_add_array'],
 })
 export class TableComponent  { 
+    
     public add_array_child:Array<any>;
-    //update_add_array = new EventEmitter<any>();
 
-    constructor(private myAd : AdService)
+    constructor(private myAd : AdService,private myRoute: Router)
     {
             this.add_array_child = myAd.getAllAds();
+    }
+
+    editAd(name_to_be_edited:String)
+    {
+            this.myRoute.navigate(['/edit',name_to_be_edited]);
     }
 
 
