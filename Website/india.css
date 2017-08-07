@@ -1,7 +1,7 @@
 .header{
 	
 	color:white;
-	text-align: center;
+	
 }
 .button{
 	color: white;
@@ -11,4 +11,7 @@
 	background-image: url(india.jpg);
 	background-repeat: repeat-y;
 }
-*{background-color: grey;}
+
+*{
+	background-color: linen;
+ }

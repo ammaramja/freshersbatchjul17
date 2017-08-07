@@ -1,0 +1,31 @@
+
+System.Data.sqlclient
+System.Daya.oleDb
+
+
+1.Provider
+2.Dataset
+Connection
+.ConnetionString=(ServerName;DataBase name;authentication----1)windows 2)sql)
+
+command class 
+
+.ExecuteNonquery()
+{
+it fires a query in case of insert/updATE/DELETE
+return a integer value
+}
+
+.EXECUTEREADER
+{
+used for select command
+}
+
+.ExecuteScalar()
+{
+
+}
+
+DATAREADER		//can store upto 2 columns only
+DATAADAPTER
+DATASET

@@ -4306,6 +4306,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle:focus {
   outline: 0;
 }
+.header1{
+  background-color: linen;
+}
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;

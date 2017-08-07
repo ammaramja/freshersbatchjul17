@@ -1,0 +1,22 @@
+HW:::	Apply jagged array using for loop 
+
+Collection
+
+The study of data structure is known as Collection
+collection is of 2 type 
+1)Generic 	i.e Same type
+2)Non-generic   i.e Different types
+
+--->>System.collection.generic
+	is the namespace used for generic collection
+
+--->>System.collection
+	is used for non-generic
+
+--->>>Non-generic includes array list,stack,queue,hash table
+
+--->>>Generic includes stack,queue and dictionary
+
+Boxing ,unboxing is used in collection
+
+list

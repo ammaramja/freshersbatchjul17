@@ -1,0 +1,5 @@
+toolbox->data->binding source (add to form click)->properties->(data source-other data sources ->name_datasheet)
+
+
+now to link textboxes
+
