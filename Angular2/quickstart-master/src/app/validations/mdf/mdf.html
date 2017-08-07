@@ -1,0 +1,42 @@
+<form [formGroup]="AdForm" (ngSubmit)="onSubmit()">
+
+<div class="container">
+<h3>{{title}}</h3>
+
+    <div class="form-group row">
+        <div class="col-md-3">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" formControlName="name" #nameref>
+            <div [hidden] = "AdForm.controls['name'].pristine && AdForm.controls['name'].untouched" >
+                <div *ngIf="AdForm.controls['name'].hasError('required')" class="alert alert-danger">
+                    Enter Valid name!
+                    </div>
+             </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <label>Category</label>
+            
+            <select #categoryref>  
+              <option *ngFor="let categories of list_categories" [value]="categories" >{{categories}}</option>
+            </select>
+            
+
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <label>Description</label>
+            <input type="text" name="price" formControlName="description" class="form-control" #descriptionref>
+            <div [hidden]="AdForm.controls['description'].pristine && AdForm.controls['description'].untouched">
+                <div *ngIf = "AdForm.controls['description'].hasError('required')" class="alert alert-danger">Required!</div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" #postChild (click)="submit_add(nameref.value,categoryref.value,descriptionref.value)" >ADD PRODUCT</button>
+    <br>
+    <br>
+</div>
+
+</form>
